@@ -1,0 +1,944 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | Brownstone Supply Co.</title>
+  <meta
+    name="description"
+    content="Browse hardware, electrical, cleaning supplies, garbage bags, and building essentials for NYC properties — request availability and delivery."
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-products page-products-catalog">
+  <div class="sticky-nav" aria-hidden="true">
+    <div class="container">
+      <a class="brand" href="index.html#home">
+        <img src="logo.svg" alt="Brownstone Supply Co" class="brand-logo">
+        <div>
+          <p class="brand-title">BROWNSTONE</p>
+          
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html#home">Home</a>
+        <a href="products.html" aria-current="page">Products</a>
+        <a href="index.html#delivery">Delivery</a>
+        <a href="about-us/">About</a>
+        <a href="contact/" class="button button-primary">Contact</a>
+      </nav>
+      <button class="mobile-menu-toggle" type="button" data-mobile-menu-toggle aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <button class="mobile-menu__backdrop" type="button" data-mobile-menu-close aria-label="Close menu"></button>
+    <nav class="mobile-menu__panel" aria-label="Mobile menu">
+      <button class="mobile-menu__close" type="button" data-mobile-menu-close aria-label="Close menu">&times;</button>
+      <a class="mobile-menu__link" href="index.html#home">Home</a>
+      <a class="mobile-menu__link" href="products.html">Products</a>
+      <a class="mobile-menu__link" href="index.html#delivery">Delivery</a>
+      <a class="mobile-menu__link" href="about-us/">About</a>
+      <a class="mobile-menu__link button button-primary" href="contact/">Contact</a>
+    </nav>
+  </div>
+
+  <header class="hero hero--page" id="top">
+    <div class="hero-nav">
+      <div class="container">
+        <a class="brand" href="index.html#home">
+          <img src="logo.svg" alt="Brownstone Supply Co" class="brand-logo">
+          <div>
+            <p class="brand-title">BROWNSTONE</p>
+            
+          </div>
+        </a>
+        <nav class="nav-links">
+          <a href="index.html#home">Home</a>
+          <a href="products.html" aria-current="page">Products</a>
+          <a href="index.html#delivery">Delivery</a>
+          <a href="about-us/">About</a>
+          <a href="contact/" class="button button-primary">Contact</a>
+        </nav>
+        <button class="mobile-menu-toggle" type="button" data-mobile-menu-toggle aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="hero-content hero-content--page">
+      <div class="container">
+        <div class="hero-copy hero-copy--page">
+          <span class="eyebrow">Catalog</span>
+          <h1 class="serif">Products</h1>
+          <p>
+            Browse by category. Every item ships with the same Manhattan service standards — call to confirm stock,
+            sizing, and same-day delivery windows.
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="shop-page shop-page--light">
+    <div class="shop-jump-wrap">
+      <div class="container shop-toolbar">
+        <div class="shop-search-wrap" role="search">
+          <label class="sr-only" for="product-search">Search products</label>
+          <div class="shop-search shop-search--inline">
+            <input
+              type="search"
+              id="product-search"
+              class="shop-search__input"
+              placeholder="Search products…"
+              autocomplete="off"
+            >
+          </div>
+          <button type="button" class="shop-search-trigger" id="shop-search-open" aria-haspopup="dialog" aria-controls="shop-search-modal">
+            Search
+          </button>
+        </div>
+        <nav class="shop-jump shop-jump-desktop shop-toolbar__categories" aria-label="Jump to category">
+          <a href="#hardware-tools">Hardware &amp; Tools</a>
+          <a href="#electrical">Electrical</a>
+          <a href="#cleaning">Cleaning</a>
+          <a href="#garbage-essentials">Garbage &amp; bags</a>
+          <a href="#building-essentials">Building essentials</a>
+        </nav>
+        <div class="shop-category-mobile shop-toolbar__mobile-cats">
+          <button
+            type="button"
+            class="shop-category-select"
+            id="shop-category-open"
+            aria-haspopup="dialog"
+            aria-controls="shop-category-modal"
+            aria-expanded="false"
+            aria-label="Choose category"
+          >
+            Category
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <section class="shop-section" id="hardware-tools">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Category</span>
+          <h2 class="serif">Hardware &amp; Tools</h2>
+          <p>Core tools and hardware that keep every building job moving — stocked for supers, handymen, and contractors.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <a class="product-card__link" href="product/screws-nails-anchors.html">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=900&q=80" alt="Screws, nails and anchors on a work surface">
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Screws, nails &amp; anchors</h3>
+                <p class="product-card__desc">Fasteners for concrete, wood, and metal so your crew never waits on the right anchor for the substrate.</p>
+              </div>
+            </a>
+            <div class="product-card__actions">
+              <a class="button-product-order" href="product/screws-nails-anchors.html">See more</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a class="product-card__link" href="product/hand-power-tools.html">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&w=900&q=80" alt="Hand and power tools in a workshop">
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Hand &amp; power tools</h3>
+                <p class="product-card__desc">Curated drivers, saws, and drills for daily maintenance and quick repairs in occupied buildings.</p>
+              </div>
+            </a>
+            <div class="product-card__actions">
+              <a class="button-product-order" href="product/hand-power-tools.html">See more</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a class="product-card__link" href="product/locks-door-hardware.html">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=80" alt="Door lock and hardware">
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Locks &amp; door hardware</h3>
+                <p class="product-card__desc">Cylinders, mortise sets, and exit devices aligned with multifamily and commercial door schedules.</p>
+              </div>
+            </a>
+            <div class="product-card__actions">
+              <a class="button-product-order" href="product/locks-door-hardware.html">See more</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a class="product-card__link" href="product/pliers-wrenches-more.html">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=80" alt="Pliers and wrenches">
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Pliers, wrenches &amp; more</h3>
+                <p class="product-card__desc">Grip, torque, and cutting tools sized for mechanical closets, risers, and tight service spaces.</p>
+              </div>
+            </a>
+            <div class="product-card__actions">
+              <a class="button-product-order" href="product/pliers-wrenches-more.html">See more</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="shop-section" id="electrical">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Category</span>
+          <h2 class="serif">Electrical Supplies</h2>
+          <p>Essential electrical stock for repairs, replacements, and turnover work — spec-grade where it matters.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <a class="product-card__link" href="product/outlets-switches-covers.html">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=900&q=80" alt="Electrical outlets and switches">
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Outlets, switches &amp; covers</h3>
+                <p class="product-card__desc">Commercial-grade receptacles, switches, and wall plates for common corridors and unit refreshes.</p>
+              </div>
+            </a>
+            <div class="product-card__actions">
+              <a class="button-product-order" href="product/outlets-switches-covers.html">See more</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a class="product-card__link" href="product/light-bulbs-fixtures.html">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=900&q=80" alt="Light bulbs and lighting">
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Light bulbs &amp; fixtures</h3>
+                <p class="product-card__desc">LED lamping and retrofit-friendly options that keep halls bright and energy reports predictable.</p>
+              </div>
+            </a>
+            <div class="product-card__actions">
+              <a class="button-product-order" href="product/light-bulbs-fixtures.html">See more</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a class="product-card__link" href="product/wire-cable-conduit.html">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80" alt="Electrical wire and cable">
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Wire, cable &amp; conduit</h3>
+                <p class="product-card__desc">Copper runs, MC cable, and low-voltage supplies for licensed electricians on your approved-vendor list.</p>
+              </div>
+            </a>
+            <div class="product-card__actions">
+              <a class="button-product-order" href="product/wire-cable-conduit.html">See more</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a class="product-card__link" href="product/breakers-panels.html">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80" alt="Electrical panel and breakers">
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Breakers &amp; panels</h3>
+                <p class="product-card__desc">Compatible breakers, blanks, and panel accessories for safe service upgrades and troubleshooting.</p>
+              </div>
+            </a>
+            <div class="product-card__actions">
+              <a class="button-product-order" href="product/breakers-panels.html">See more</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="shop-section" id="cleaning">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Category</span>
+          <h2 class="serif">Cleaning Supplies</h2>
+          <p>Commercial cleaning products for lobbies, service corridors, and back-of-house areas.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <a class="product-card__link" href="product/floor-cleaners-mops.html">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=80" alt="Floor cleaning and mops">
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Floor cleaners &amp; mops</h3>
+                <p class="product-card__desc">PH-balanced solutions and commercial mop systems for stone, tile, and resilient surfaces.</p>
+              </div>
+            </a>
+            <div class="product-card__actions">
+              <a class="button-product-order" href="product/floor-cleaners-mops.html">See more</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a class="product-card__link" href="product/disinfectants-sprays.html">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=900&q=80" alt="Disinfectant sprays and bottles">
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Disinfectants &amp; sprays</h3>
+                <p class="product-card__desc">Hospital-grade and EPA-listed options for elevators, mailrooms, and high-touch fixtures.</p>
+              </div>
+            </a>
+            <div class="product-card__actions">
+              <a class="button-product-order" href="product/disinfectants-sprays.html">See more</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a class="product-card__link" href="product/paper-towels-dispensers.html">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?auto=format&fit=crop&w=900&q=80" alt="Paper towels and dispensers">
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Paper towels &amp; dispensers</h3>
+                <p class="product-card__desc">Jumbo rolls, folded towels, and compatible dispensers for supers’ closets and amenity restrooms.</p>
+              </div>
+            </a>
+            <div class="product-card__actions">
+              <a class="button-product-order" href="product/paper-towels-dispensers.html">See more</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a class="product-card__link" href="product/gloves-ppe.html">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=900&q=80" alt="Protective gloves">
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Gloves &amp; PPE</h3>
+                <p class="product-card__desc">Nitrile and latex-alternative gloves plus basic PPE for porters, maintenance, and turnover crews.</p>
+              </div>
+            </a>
+            <div class="product-card__actions">
+              <a class="button-product-order" href="product/gloves-ppe.html">See more</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="shop-section" id="garbage-essentials">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Category</span>
+          <h2 class="serif">Garbage Bags &amp; Building Essentials</h2>
+          <p>Daily-use bags and jobsite essentials residential buildings burn through every week.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <a class="product-card__link" href="product/heavy-duty-contractor-bags.html">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1604187351574-c75ca79f5807?auto=format&fit=crop&w=900&q=80" alt="Heavy garbage bags">
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Heavy-duty contractor bags</h3>
+                <p class="product-card__desc">High-mil black bags for construction debris, metal scrap, and loads that would tear standard liners.</p>
+              </div>
+            </a>
+            <div class="product-card__actions">
+              <a class="button-product-order" href="product/heavy-duty-contractor-bags.html">See more</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a class="product-card__link" href="product/kitchen-desk-recycling-compost-liners.html">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=900&q=80" alt="Trash liners and recycling">
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Kitchen, desk, recycling, and compost liners</h3>
+                <p class="product-card__desc">Sized rolls for chutes, desk-side bins, and sorting programs that keep waste rooms organized.</p>
+              </div>
+            </a>
+            <div class="product-card__actions">
+              <a class="button-product-order" href="product/kitchen-desk-recycling-compost-liners.html">See more</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a class="product-card__link" href="product/caulk-tape-patching-supplies.html">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80" alt="Caulk and tape supplies">
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Caulk, tape, patching supplies</h3>
+                <p class="product-card__desc">Sealants, painter’s tape, and patch kits for quick turnovers between tenants.</p>
+              </div>
+            </a>
+            <div class="product-card__actions">
+              <a class="button-product-order" href="product/caulk-tape-patching-supplies.html">See more</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a class="product-card__link" href="product/plumbing-fittings-safety-signage.html">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=900&q=80" alt="Plumbing fittings and tools">
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Plumbing fittings, safety, and signage</h3>
+                <p class="product-card__desc">Common brass and PVC fittings plus safety markers and code-friendly signage for service routes.</p>
+              </div>
+            </a>
+            <div class="product-card__actions">
+              <a class="button-product-order" href="product/plumbing-fittings-safety-signage.html">See more</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="shop-section" id="building-essentials">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Category</span>
+          <h2 class="serif">Building Essentials</h2>
+          <p>The day-to-day items every residential building goes through — kept in stock for repeat orders.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <a class="product-card__link" href="product/caulk-sealants-tape.html">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&w=900&q=80" alt="Maintenance supplies and tools">
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Caulk, sealants &amp; tape</h3>
+                <p class="product-card__desc">Interior and exterior sealants plus tapes for drafts, perimeter gaps, and finish transitions.</p>
+              </div>
+            </a>
+            <div class="product-card__actions">
+              <a class="button-product-order" href="product/caulk-sealants-tape.html">See more</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a class="product-card__link" href="product/paint-patching-supplies.html">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80" alt="Paint cans and supplies">
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Paint &amp; patching supplies</h3>
+                <p class="product-card__desc">Touch-up gallons, spackle, sandpaper, and mini-rollers for fast cosmetic work between leases.</p>
+              </div>
+            </a>
+            <div class="product-card__actions">
+              <a class="button-product-order" href="product/paint-patching-supplies.html">See more</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a class="product-card__link" href="product/plumbing-fittings.html">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1581244277943-fe4a9c777189?auto=format&fit=crop&w=900&q=80" alt="Plumbing pipes and fittings">
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Plumbing fittings</h3>
+                <p class="product-card__desc">Compression, push-fit, and threaded fittings for leak repairs without a full material order.</p>
+              </div>
+            </a>
+            <div class="product-card__actions">
+              <a class="button-product-order" href="product/plumbing-fittings.html">See more</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a class="product-card__link" href="product/safety-signage.html">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=80" alt="Building hallway and safety lighting">
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Safety &amp; signage</h3>
+                <p class="product-card__desc">Exit signs, floor marking tape, and directional plaques to keep paths legible during work.</p>
+              </div>
+            </a>
+            <div class="product-card__actions">
+              <a class="button-product-order" href="product/safety-signage.html">See more</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="shop-cta">
+      <div class="container">
+        <div class="shop-cta-inner section-head">
+          <span class="eyebrow">Next step</span>
+          <h2 class="serif">Need a quote or same-day drop?</h2>
+          <p>Call with your building address and SKU list — we’ll confirm inventory and schedule delivery across NYC.</p>
+          <a class="button button-primary" href="index.html#contact">Contact us</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="shop-page-footer" id="contact">
+      <div class="container">
+        <div class="site-footer">
+          <div>
+            <a class="brand" href="index.html#home">
+              <img src="logo.svg" alt="Brownstone Supply Co" class="brand-logo">
+            </a>
+            <p>
+              Hardware, electrical, cleaning supplies, garbage bags, and building essentials delivered fast across Manhattan and the five boroughs.
+            </p>
+          </div>
+          <div>
+            <h4>Navigate</h4>
+            <ul>
+              <li><a href="index.html#home">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="index.html#delivery">Delivery</a></li>
+              <li><a href="about-us/">About Us</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>We Carry</h4>
+            <ul>
+              <li>Hardware &amp; Tools</li>
+              <li>Electrical Supplies</li>
+              <li>Cleaning Products</li>
+              <li>Garbage Bags</li>
+              <li>Building Essentials</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <ul>
+              <li>(212) 756-1225</li>
+              <li>hello@brownstonesupplyco.com</li>
+              <li>brownstonesupplyco.com</li>
+              <li>Manhattan, New York City</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Brownstone Supply Co. · Manhattan, NYC · All Rights Reserved</p>
+          <p>brownstonesupplyco.com</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/38345689914"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat on WhatsApp"
+  >
+    <svg class="whatsapp-float__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path
+        fill="currentColor"
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+      />
+    </svg>
+  </a>
+
+  <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
+
+  <div class="shop-search-modal" id="shop-search-modal" role="dialog" aria-modal="true" aria-labelledby="shop-search-modal-title" hidden>
+    <div class="shop-search-modal__backdrop" tabindex="-1" aria-hidden="true"></div>
+    <div class="shop-search-modal__panel">
+      <div class="shop-search-modal__head">
+        <h2 id="shop-search-modal-title" class="shop-search-modal__title">Search products</h2>
+        <button type="button" class="shop-search-modal__close" id="shop-search-close" aria-label="Close search">×</button>
+      </div>
+      <label class="sr-only" for="product-search-modal">Search</label>
+      <input
+        type="search"
+        id="product-search-modal"
+        class="shop-search__input shop-search-modal__input"
+        placeholder="Search products…"
+        autocomplete="off"
+      >
+    </div>
+  </div>
+
+  <div
+    class="shop-search-modal shop-category-modal"
+    id="shop-category-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="shop-category-modal-title"
+    hidden
+  >
+    <div class="shop-search-modal__backdrop" tabindex="-1" aria-hidden="true" id="shop-category-backdrop"></div>
+    <div class="shop-search-modal__panel shop-category-modal__panel">
+      <div class="shop-search-modal__head">
+        <h2 id="shop-category-modal-title" class="shop-search-modal__title">Category</h2>
+        <button type="button" class="shop-search-modal__close" id="shop-category-close" aria-label="Close category menu">
+          ×
+        </button>
+      </div>
+      <ul class="shop-category-modal__list" role="listbox" aria-label="Categories">
+        <li role="none">
+          <button type="button" class="shop-category-modal__item" role="option" data-hash="#hardware-tools">
+            Hardware &amp; Tools
+          </button>
+        </li>
+        <li role="none">
+          <button type="button" class="shop-category-modal__item" role="option" data-hash="#electrical">Electrical</button>
+        </li>
+        <li role="none">
+          <button type="button" class="shop-category-modal__item" role="option" data-hash="#cleaning">Cleaning</button>
+        </li>
+        <li role="none">
+          <button type="button" class="shop-category-modal__item" role="option" data-hash="#garbage-essentials">
+            Garbage &amp; bags
+          </button>
+        </li>
+        <li role="none">
+          <button type="button" class="shop-category-modal__item" role="option" data-hash="#building-essentials">
+            Building essentials
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    document.body.classList.add("js-ready");
+
+    const revealGroups = [
+      ".hero-copy--page",
+      ".section-head",
+      ".product-card"
+    ];
+
+    const revealElements = revealGroups.flatMap((selector) =>
+      Array.from(document.querySelectorAll(selector))
+    );
+
+    const revealElement = (element) => {
+      element.classList.add("is-visible");
+    };
+
+    const revealIfInView = () => {
+      revealElements.forEach((element) => {
+        if (element.classList.contains("is-visible")) {
+          return;
+        }
+
+        const rect = element.getBoundingClientRect();
+        const inView =
+          rect.top < window.innerHeight * 0.82 &&
+          rect.bottom > window.innerHeight * 0.18;
+
+        if (inView) {
+          revealElement(element);
+        }
+      });
+    };
+
+    revealElements.forEach((element, index) => {
+      element.classList.add(`delay-${Math.min((index % 5) + 1, 5)}`);
+    });
+
+    const showImmediately = [".hero-copy--page"];
+
+    const revealHeroElements = () => {
+      showImmediately.forEach((selector) => {
+        document.querySelectorAll(selector).forEach((element) => revealElement(element));
+      });
+    };
+
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              revealElement(entry.target);
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.22,
+          rootMargin: "0px 0px 0px 0px"
+        }
+      );
+
+      revealElements.forEach((element) => {
+        if (!element.classList.contains("is-visible")) {
+          observer.observe(element);
+        }
+      });
+    } else {
+      revealElements.forEach((element) => revealElement(element));
+    }
+
+    window.addEventListener("load", () => {
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          revealHeroElements();
+          revealIfInView();
+        });
+      });
+    });
+    window.addEventListener("scroll", revealIfInView, { passive: true });
+    window.addEventListener("resize", revealIfInView);
+    setTimeout(revealHeroElements, 120);
+    setTimeout(revealIfInView, 180);
+
+    const backToTop = document.querySelector(".back-to-top");
+
+    const toggleBackToTop = () => {
+      if (!backToTop) {
+        return;
+      }
+
+      const shouldShow = window.scrollY > 420;
+      backToTop.classList.toggle("is-visible", shouldShow);
+    };
+
+    const shopJumpWrap = document.querySelector(".shop-jump-wrap");
+
+    const updateShopJumpSticky = () => {
+      if (!shopJumpWrap) {
+        return;
+      }
+
+      /* No top sticky nav on this page — toolbar sticks to viewport top */
+      shopJumpWrap.style.setProperty("--shop-jump-sticky-top", "0px");
+
+      const rect = shopJumpWrap.getBoundingClientRect();
+      const stuck = rect.top <= 1;
+      shopJumpWrap.classList.toggle("is-stuck", stuck);
+    };
+
+    window.addEventListener("scroll", toggleBackToTop, { passive: true });
+    window.addEventListener("scroll", updateShopJumpSticky, { passive: true });
+    window.addEventListener("resize", updateShopJumpSticky);
+    window.addEventListener("load", toggleBackToTop);
+    window.addEventListener("load", updateShopJumpSticky);
+    toggleBackToTop();
+    updateShopJumpSticky();
+
+    const mobileMenu = document.getElementById("mobile-menu");
+    const mobileToggles = Array.from(document.querySelectorAll("[data-mobile-menu-toggle]"));
+    const mobileClose = Array.from(document.querySelectorAll("[data-mobile-menu-close], .mobile-menu__link"));
+    const setMobileExpanded = (expanded) => {
+      mobileToggles.forEach((btn) => btn.setAttribute("aria-expanded", expanded ? "true" : "false"));
+    };
+    const openMobileMenu = () => {
+      if (!mobileMenu) return;
+      mobileMenu.hidden = false;
+      requestAnimationFrame(() => mobileMenu.classList.add("is-open"));
+      document.body.classList.add("mobile-menu-open");
+      setMobileExpanded(true);
+    };
+    const closeMobileMenu = () => {
+      if (!mobileMenu) return;
+      mobileMenu.classList.remove("is-open");
+      document.body.classList.remove("mobile-menu-open");
+      setMobileExpanded(false);
+      setTimeout(() => {
+        if (!mobileMenu.classList.contains("is-open")) mobileMenu.hidden = true;
+      }, 280);
+    };
+    mobileToggles.forEach((btn) => btn.addEventListener("click", openMobileMenu));
+    mobileClose.forEach((el) => el.addEventListener("click", closeMobileMenu));
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeMobileMenu();
+    });
+
+    const productSearch = document.getElementById("product-search");
+    const productSearchModal = document.getElementById("product-search-modal");
+    const searchModalEl = document.getElementById("shop-search-modal");
+    const searchOpenBtn = document.getElementById("shop-search-open");
+    const searchCloseBtn = document.getElementById("shop-search-close");
+    const searchBackdrop = searchModalEl?.querySelector(".shop-search-modal__backdrop");
+
+    const applyProductSearch = () => {
+      if (!productSearch) {
+        return;
+      }
+
+      const q = productSearch.value.trim().toLowerCase();
+
+      document.querySelectorAll(".product-card").forEach((card) => {
+        const title = card.querySelector(".product-card__title")?.textContent || "";
+        const desc = card.querySelector(".product-card__desc")?.textContent || "";
+        const match = !q || `${title} ${desc}`.toLowerCase().includes(q);
+        card.classList.toggle("is-search-hidden", !match);
+      });
+
+      document.querySelectorAll(".shop-section").forEach((section) => {
+        const visible = section.querySelectorAll(".product-card:not(.is-search-hidden)").length;
+        section.classList.toggle("shop-section--filtered-out", q.length > 0 && visible === 0);
+      });
+    };
+
+    const syncModalFromMain = () => {
+      if (productSearchModal && productSearch) {
+        productSearchModal.value = productSearch.value;
+      }
+    };
+
+    const syncMainFromModal = () => {
+      if (productSearch && productSearchModal) {
+        productSearch.value = productSearchModal.value;
+        applyProductSearch();
+      }
+    };
+
+    if (productSearch) {
+      productSearch.addEventListener("input", () => {
+        syncModalFromMain();
+        applyProductSearch();
+      });
+      productSearch.addEventListener("search", applyProductSearch);
+    }
+
+    if (productSearchModal) {
+      productSearchModal.addEventListener("input", syncMainFromModal);
+    }
+
+    const categoryModalEl = document.getElementById("shop-category-modal");
+    const categoryOpenBtn = document.getElementById("shop-category-open");
+    const categoryCloseBtn = document.getElementById("shop-category-close");
+    const categoryBackdrop = document.getElementById("shop-category-backdrop");
+
+    const closeSearchModal = (opts = {}) => {
+      const { returnFocus = true } = opts;
+
+      if (!searchModalEl || !productSearch) {
+        return;
+      }
+
+      searchModalEl.hidden = true;
+      document.body.classList.remove("shop-search-modal-open");
+      if (productSearchModal) {
+        productSearch.value = productSearchModal.value;
+      }
+      applyProductSearch();
+      if (returnFocus) {
+        searchOpenBtn?.focus();
+      }
+    };
+
+    const closeCategoryModal = (opts = {}) => {
+      const { returnFocus = true } = opts;
+
+      if (!categoryModalEl) {
+        return;
+      }
+
+      categoryModalEl.hidden = true;
+      document.body.classList.remove("shop-category-modal-open");
+      categoryOpenBtn?.setAttribute("aria-expanded", "false");
+      if (returnFocus) {
+        categoryOpenBtn?.focus();
+      }
+    };
+
+    const openCategoryModal = () => {
+      if (!categoryModalEl) {
+        return;
+      }
+
+      if (searchModalEl && !searchModalEl.hidden) {
+        closeSearchModal({ returnFocus: false });
+      }
+
+      categoryModalEl.hidden = false;
+      document.body.classList.add("shop-category-modal-open");
+      categoryOpenBtn?.setAttribute("aria-expanded", "true");
+      requestAnimationFrame(() => categoryCloseBtn?.focus());
+    };
+
+    const openSearchModal = () => {
+      if (!searchModalEl || !productSearchModal || !productSearch) {
+        return;
+      }
+
+      if (categoryModalEl && !categoryModalEl.hidden) {
+        closeCategoryModal({ returnFocus: false });
+      }
+
+      searchModalEl.hidden = false;
+      productSearchModal.value = productSearch.value;
+      document.body.classList.add("shop-search-modal-open");
+      requestAnimationFrame(() => productSearchModal.focus());
+    };
+
+    searchOpenBtn?.addEventListener("click", openSearchModal);
+    searchCloseBtn?.addEventListener("click", closeSearchModal);
+    searchBackdrop?.addEventListener("click", closeSearchModal);
+
+    categoryOpenBtn?.addEventListener("click", openCategoryModal);
+    categoryCloseBtn?.addEventListener("click", closeCategoryModal);
+    categoryBackdrop?.addEventListener("click", closeCategoryModal);
+
+    document.querySelectorAll(".shop-category-modal__item").forEach((item) => {
+      item.addEventListener("click", () => {
+        const hash = item.getAttribute("data-hash");
+        if (hash) {
+          window.location.hash = hash;
+        }
+        closeCategoryModal();
+      });
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key !== "Escape") {
+        return;
+      }
+
+      if (searchModalEl && !searchModalEl.hidden) {
+        closeSearchModal();
+      } else if (categoryModalEl && !categoryModalEl.hidden) {
+        closeCategoryModal();
+      }
+    });
+
+    const syncProductsFromHomeQuery = () => {
+      let q = "";
+      let cat = "";
+
+      try {
+        const params = new URLSearchParams(window.location.search);
+        q = (params.get("q") || "").trim();
+        cat = (params.get("cat") || "").trim();
+
+        if (!q) {
+          q = (sessionStorage.getItem("bsc_products_q") || "").trim();
+        }
+        if (!cat) {
+          cat = (sessionStorage.getItem("bsc_products_cat") || "").trim();
+        }
+
+        sessionStorage.removeItem("bsc_products_q");
+        sessionStorage.removeItem("bsc_products_cat");
+      } catch (err) {
+        /* ignore */
+      }
+
+      if (productSearch && q) {
+        productSearch.value = q;
+        if (productSearchModal) {
+          productSearchModal.value = q;
+        }
+        applyProductSearch();
+      }
+
+      if (cat && /^[a-z0-9-]+$/.test(cat)) {
+        const nextHash = `#${cat}`;
+        if (window.location.hash !== nextHash) {
+          window.location.hash = nextHash;
+        }
+      }
+    };
+
+    syncProductsFromHomeQuery();
+    window.addEventListener("load", () => {
+      requestAnimationFrame(syncProductsFromHomeQuery);
+    });
+  </script>
+</body>
+</html>

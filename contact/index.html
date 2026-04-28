@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Brownstone Supply Co.</title>
+  <meta
+    name="description"
+    content="Contact Brownstone Supply Co. for stock checks, delivery windows, and building supply support across NYC."
+  >
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="page-products page-contact">
+  <div class="sticky-nav" aria-hidden="true">
+    <div class="container">
+      <a class="brand" href="../index.html#home">
+        <img src="../logo.svg" alt="Brownstone Supply Co" class="brand-logo">
+        <div>
+          <p class="brand-title">BROWNSTONE</p>
+          
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="../index.html#home">Home</a>
+        <a href="../products.html">Products</a>
+        <a href="../index.html#delivery">Delivery</a>
+        <a href="../about-us/">About</a>
+        <a href="../contact/" aria-current="page" class="button button-primary">Contact</a>
+      </nav>
+      <button class="mobile-menu-toggle" type="button" data-mobile-menu-toggle aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <button class="mobile-menu__backdrop" type="button" data-mobile-menu-close aria-label="Close menu"></button>
+    <nav class="mobile-menu__panel" aria-label="Mobile menu">
+      <button class="mobile-menu__close" type="button" data-mobile-menu-close aria-label="Close menu">&times;</button>
+      <a class="mobile-menu__link" href="../index.html#home">Home</a>
+      <a class="mobile-menu__link" href="../products.html">Products</a>
+      <a class="mobile-menu__link" href="../index.html#delivery">Delivery</a>
+      <a class="mobile-menu__link" href="../about-us/">About</a>
+      <a class="mobile-menu__link button button-primary" href="../contact/">Contact</a>
+    </nav>
+  </div>
+
+  <header class="hero hero--page" id="top">
+    <div class="hero-nav">
+      <div class="container">
+        <a class="brand" href="../index.html#home">
+          <img src="../logo.svg" alt="Brownstone Supply Co" class="brand-logo">
+          <div>
+            <p class="brand-title">BROWNSTONE</p>
+            
+          </div>
+        </a>
+        <nav class="nav-links">
+          <a href="../index.html#home">Home</a>
+          <a href="../products.html">Products</a>
+          <a href="../index.html#delivery">Delivery</a>
+          <a href="../about-us/">About</a>
+          <a href="../contact/" aria-current="page" class="button button-primary">Contact</a>
+        </nav>
+        <button class="mobile-menu-toggle" type="button" data-mobile-menu-toggle aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="hero-content hero-content--page">
+      <div class="container">
+        <div class="hero-copy hero-copy--page">
+          <span class="eyebrow">Contact</span>
+          <h1 class="serif">Talk to us. We are real people.</h1>
+          <p>
+            Call, WhatsApp, or send your building details below. We respond quickly with stock confirmation and delivery options.
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <span class="eyebrow">Get In Touch</span>
+      <h2 class="serif">Ready to place an order or check stock?</h2>
+      <p class="lead">
+        Share what you need and we will help you move fast.
+      </p>
+
+      <div class="contact-layout">
+        <div class="contact-card">
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-label">Call Us</div>
+              <div class="contact-value">(212) 756-1225</div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-label">WhatsApp</div>
+              <div class="contact-value"><a href="https://wa.me/38345689914" target="_blank" rel="noopener noreferrer">Message Us</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-label">Email</div>
+              <div class="contact-value">hello@brownstonesupplyco.com</div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-label">Location</div>
+              <div class="contact-value">Manhattan, New York City</div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-label">Hours</div>
+              <div class="contact-value">Mon-Fri 7:00am-6:00pm<br>Saturday 8:00am-4:00pm<br>Sunday Closed</div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="2531a6b6-869c-4323-9fa8-329e2bd5df82">
+          <input type="hidden" name="subject" value="New Contact — Brownstone Supply Co">
+          <input type="hidden" name="from_name" value="Brownstone Supply Co Website">
+          <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off">
+          <input type="text" name="website" style="position:absolute;left:-9999px;opacity:0;height:0;width:0;pointer-events:none;" tabindex="-1" autocomplete="off">
+          <div class="contact-form-grid">
+            <div class="field">
+              <label for="name">Your Name</label>
+              <input id="name" name="name" type="text" placeholder="John Smith" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="text" placeholder="(212) 000-0000" required>
+            </div>
+            <div class="field full">
+              <label for="address">Building Address</label>
+              <input id="address" name="address" type="text" placeholder="123 West 72nd St, Manhattan">
+            </div>
+            <div class="field full">
+              <label for="category">What Do You Need?</label>
+              <select id="category" name="category">
+                <option selected>Select a category...</option>
+                <option>Hardware &amp; Tools</option>
+                <option>Electrical Supplies</option>
+                <option>Cleaning Products</option>
+                <option>Garbage Bags</option>
+                <option>Building Essentials</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us what you need and we'll get back to you fast..." required></textarea>
+            </div>
+            <div class="field full captcha-field">
+              <label>Security check — <span class="captcha-question"></span></label>
+              <div class="captcha-row">
+                <input class="captcha-input" type="text" inputmode="numeric" pattern="[0-9\-]*" placeholder="Enter answer" autocomplete="off">
+                <button type="button" class="captcha-refresh" aria-label="New question" title="New question">New question</button>
+              </div>
+              <span class="captcha-hint" aria-live="polite"></span>
+            </div>
+            <div class="field full">
+              <button class="button button-primary" type="submit">Send Message</button>
+            </div>
+            <div class="field full contact-form-feedback" aria-live="polite"></div>
+          </div>
+        </form>
+      </div>
+
+      <footer class="site-footer">
+        <div>
+          <a class="brand" href="../index.html#home">
+            <img src="../logo.svg" alt="Brownstone Supply Co" class="brand-logo">
+          </a>
+          <p>
+            Hardware, electrical, cleaning supplies, garbage bags, and building essentials delivered fast across Manhattan and the five boroughs.
+          </p>
+        </div>
+        <div>
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="../index.html#home">Home</a></li>
+            <li><a href="../products.html">Products</a></li>
+            <li><a href="../index.html#delivery">Delivery</a></li>
+            <li><a href="../about-us/">About Us</a></li>
+            <li><a href="../contact/">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>We Carry</h4>
+          <ul>
+            <li>Hardware &amp; Tools</li>
+            <li>Electrical Supplies</li>
+            <li>Cleaning Products</li>
+            <li>Garbage Bags</li>
+            <li>Building Essentials</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>(212) 756-1225</li>
+            <li>hello@brownstonesupplyco.com</li>
+            <li>brownstonesupplyco.com</li>
+            <li>Manhattan, New York City</li>
+          </ul>
+        </div>
+      </footer>
+
+      <div class="footer-bottom">
+        <p>© 2026 Brownstone Supply Co. · Manhattan, NYC · All Rights Reserved</p>
+        <p>brownstonesupplyco.com</p>
+      </div>
+    </div>
+  </section>
+
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/38345689914"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat on WhatsApp"
+  >
+    <svg class="whatsapp-float__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path
+        fill="currentColor"
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+      />
+    </svg>
+  </a>
+
+  <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
+
+  <script>
+    document.body.classList.add("js-ready");
+
+    const revealGroups = [
+      ".hero-copy--page",
+      ".contact-card",
+      ".contact-form"
+    ];
+
+    const revealElements = revealGroups.flatMap((selector) =>
+      Array.from(document.querySelectorAll(selector))
+    );
+
+    const revealElement = (element) => {
+      element.classList.add("is-visible");
+    };
+
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              revealElement(entry.target);
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.22 }
+      );
+      revealElements.forEach((element) => observer.observe(element));
+    } else {
+      revealElements.forEach((element) => revealElement(element));
+    }
+
+    const stickyNav = document.querySelector(".sticky-nav");
+    const backToTop = document.querySelector(".back-to-top");
+
+    const toggleStickyNav = () => {
+      if (!stickyNav) return;
+      const shouldShow = window.scrollY > 110;
+      stickyNav.classList.toggle("is-visible", shouldShow);
+      stickyNav.setAttribute("aria-hidden", shouldShow ? "false" : "true");
+    };
+
+    const toggleBackToTop = () => {
+      if (!backToTop) return;
+      const shouldShow = window.scrollY > 420;
+      backToTop.classList.toggle("is-visible", shouldShow);
+    };
+
+    window.addEventListener("scroll", toggleStickyNav, { passive: true });
+    window.addEventListener("scroll", toggleBackToTop, { passive: true });
+    window.addEventListener("load", toggleStickyNav);
+    window.addEventListener("load", toggleBackToTop);
+    toggleStickyNav();
+    toggleBackToTop();
+
+    const mobileMenu = document.getElementById("mobile-menu");
+    const mobileToggles = Array.from(document.querySelectorAll("[data-mobile-menu-toggle]"));
+    const mobileClose = Array.from(document.querySelectorAll("[data-mobile-menu-close], .mobile-menu__link"));
+    const setMobileExpanded = (expanded) => {
+      mobileToggles.forEach((btn) => btn.setAttribute("aria-expanded", expanded ? "true" : "false"));
+    };
+    const openMobileMenu = () => {
+      if (!mobileMenu) return;
+      mobileMenu.hidden = false;
+      requestAnimationFrame(() => mobileMenu.classList.add("is-open"));
+      document.body.classList.add("mobile-menu-open");
+      setMobileExpanded(true);
+    };
+    const closeMobileMenu = () => {
+      if (!mobileMenu) return;
+      mobileMenu.classList.remove("is-open");
+      document.body.classList.remove("mobile-menu-open");
+      setMobileExpanded(false);
+      setTimeout(() => {
+        if (!mobileMenu.classList.contains("is-open")) mobileMenu.hidden = true;
+      }, 280);
+    };
+    mobileToggles.forEach((btn) => btn.addEventListener("click", openMobileMenu));
+    mobileClose.forEach((el) => el.addEventListener("click", closeMobileMenu));
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeMobileMenu();
+    });
+
+    (function () {
+      const form = document.querySelector(".contact-form");
+      if (!form) return;
+
+      let captchaAnswer;
+      const formOpenedAt = Date.now();
+
+      function generateCaptcha() {
+        const ops = ["+", "-", "×"];
+        const op = ops[Math.floor(Math.random() * ops.length)];
+        let a, b, answer;
+        if (op === "+") {
+          a = Math.floor(Math.random() * 10) + 1;
+          b = Math.floor(Math.random() * 10) + 1;
+          answer = a + b;
+        } else if (op === "-") {
+          a = Math.floor(Math.random() * 9) + 10;
+          b = Math.floor(Math.random() * 8) + 1;
+          answer = a - b;
+        } else {
+          a = Math.floor(Math.random() * 4) + 2;
+          b = Math.floor(Math.random() * 4) + 2;
+          answer = a * b;
+        }
+        captchaAnswer = answer;
+        const q = form.querySelector(".captcha-question");
+        const inp = form.querySelector(".captcha-input");
+        const hint = form.querySelector(".captcha-hint");
+        if (q) q.textContent = "What is " + a + " " + op + " " + b + "?";
+        if (inp) { inp.value = ""; inp.classList.remove("is-wrong"); }
+        if (hint) hint.textContent = "";
+      }
+
+      generateCaptcha();
+      const refreshBtn = form.querySelector(".captcha-refresh");
+      if (refreshBtn) refreshBtn.addEventListener("click", generateCaptcha);
+
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        const honeypot = form.querySelector('[name="website"]');
+        if (honeypot && honeypot.value.trim() !== "") return;
+
+        const captchaInput = form.querySelector(".captcha-input");
+        const hint = form.querySelector(".captcha-hint");
+        const userAnswer = parseInt(captchaInput.value.trim(), 10);
+
+        if (isNaN(userAnswer) || userAnswer !== captchaAnswer) {
+          captchaInput.classList.add("is-wrong");
+          captchaInput.value = "";
+          if (hint) hint.textContent = "Wrong answer — new question generated.";
+          generateCaptcha();
+          captchaInput.focus();
+          return;
+        }
+
+        if (Date.now() - formOpenedAt < 3000) return;
+
+        const btn = form.querySelector('button[type="submit"]');
+        const feedback = form.querySelector(".contact-form-feedback");
+        btn.disabled = true;
+        feedback.className = "field full contact-form-feedback";
+        feedback.textContent = "";
+
+        try {
+          const res = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: new FormData(form),
+          });
+          const json = await res.json();
+          if (json.success) {
+            form.insertAdjacentHTML("afterend", [
+              '<div class="contact-success">',
+              '  <div class="contact-success__icon">&#10003;</div>',
+              '  <h3 class="contact-success__title">Message Sent!</h3>',
+              '  <p class="contact-success__body">Thank you — we\'ll be in touch shortly.</p>',
+              '</div>'
+            ].join(""));
+            form.remove();
+          } else {
+            feedback.textContent = "Something went wrong. Please try again.";
+            feedback.classList.add("is-error");
+            btn.disabled = false;
+            generateCaptcha();
+          }
+        } catch {
+          feedback.textContent = "Network error. Please try again.";
+          feedback.classList.add("is-error");
+          btn.disabled = false;
+          generateCaptcha();
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

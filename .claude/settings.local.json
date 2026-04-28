@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8080)",
+      "Bash(start cmd *)",
+      "Bash(where node *)",
+      "Bash(where npx *)",
+      "Bash(node -e ' *)",
+      "Bash(node \"c:/Users/ylliv/Documents/Sites/Brownstone Supply Co/server.js\")",
+      "Bash(curl.exe -s -o /dev/null -w \"%{http_code}\" http://localhost:8080/)",
+      "Bash(explorer \"c:/Users/ylliv/Documents/Sites/Brownstone Supply Co\")",
+      "Bash(start \"\" \"c:/Users/ylliv/Documents/Sites/Brownstone Supply Co\")",
+      "Bash(node scripts/build-product-pages.mjs)",
+      "Bash(gh auth *)",
+      "Bash(where gh *)",
+      "Bash(git init *)",
+      "Bash(git config *)",
+      "Bash(git add *)",
+      "Bash(git commit -m 'Initial commit: Brownstone Supply Co website *)"
+    ]
+  }
+}

@@ -1,0 +1,1229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brownstone Supply Co. | Manhattan Building Supply</title>
+  <meta
+    name="description"
+    content="Hardware, electrical, cleaning supplies, garbage bags, and building essentials delivered fast across New York City."
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-topbar">
+    <div class="container">
+      <div class="topbar-left">
+        <span>Manhattan, New York City</span>
+        <span>(212) 756-1225</span>
+        <span>hello@brownstonesupplyco.com</span>
+      </div>
+      <a class="topbar-link" href="#contact">Call Us Today</a>
+    </div>
+  </div>
+
+  <div class="sticky-nav" aria-hidden="true">
+    <div class="container">
+      <a class="brand" href="#home">
+        <img src="logo.svg" alt="Brownstone Supply Co" class="brand-logo">
+        <div>
+          <p class="brand-title">BROWNSTONE</p>
+          
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="#home" aria-current="page">Home</a>
+        <a href="products.html">Products</a>
+        <a href="#delivery">Delivery</a>
+        <a href="about-us/">About</a>
+        <a href="contact/" class="button button-primary">Contact</a>
+      </nav>
+      <button class="mobile-menu-toggle" type="button" data-mobile-menu-toggle aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <button class="mobile-menu__backdrop" type="button" data-mobile-menu-close aria-label="Close menu"></button>
+    <nav class="mobile-menu__panel" aria-label="Mobile menu">
+      <button class="mobile-menu__close" type="button" data-mobile-menu-close aria-label="Close menu">&times;</button>
+      <a class="mobile-menu__link" href="#home">Home</a>
+      <a class="mobile-menu__link" href="products.html">Products</a>
+      <a class="mobile-menu__link" href="#delivery">Delivery</a>
+      <a class="mobile-menu__link" href="about-us/">About</a>
+      <a class="mobile-menu__link button button-primary" href="contact/">Contact</a>
+    </nav>
+  </div>
+
+  <header class="hero" id="home">
+    <div class="hero-nav">
+      <div class="container">
+        <a class="brand" href="#home">
+          <img src="logo.svg" alt="Brownstone Supply Co" class="brand-logo">
+          <div>
+            <p class="brand-title">BROWNSTONE</p>
+            
+          </div>
+        </a>
+        <nav class="nav-links">
+          <a href="#home" aria-current="page">Home</a>
+          <a href="products.html">Products</a>
+          <a href="#delivery">Delivery</a>
+          <a href="about-us/">About</a>
+          <a href="contact/" class="button button-primary">Contact</a>
+        </nav>
+        <button class="mobile-menu-toggle" type="button" data-mobile-menu-toggle aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="review-pill">
+            <div class="stars">
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+            </div>
+            <span>Trusted by NYC building teams</span>
+          </div>
+          <h1 class="serif">
+            Built for the
+            <br>
+            buildings that
+            <br>
+            <span>built New York.</span>
+          </h1>
+          <p>
+            Hardware, electrical, cleaning supplies, and everything in between, delivered fast to all 5 boroughs.
+            Manhattan's go-to supply store for supers, property managers, and contractors.
+          </p>
+          <div class="hero-actions">
+            <a href="products.html" class="button button-primary">See Products</a>
+            <a href="#contact" class="button button-outline-light">Call Us Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="floating-panel-wrap">
+    <div class="container">
+      <section class="floating-panel">
+        <div class="panel-title">Same-Day Building Supply Delivery</div>
+        <form class="contact-strip contact-strip--catalog" action="products.html" method="get" id="home-catalog-form">
+          <div class="field field--home-search">
+            <label for="home-product-search">Search</label>
+            <div class="home-search-wrap">
+              <input
+                type="search"
+                id="home-product-search"
+                name="q"
+                placeholder="Search products…"
+                autocomplete="off"
+                aria-autocomplete="list"
+                aria-controls="home-search-dropdown"
+                aria-expanded="false"
+              >
+              <div
+                class="home-search-dropdown"
+                id="home-search-dropdown"
+                role="listbox"
+                aria-label="Matching products"
+                hidden
+              ></div>
+            </div>
+          </div>
+          <div class="field field--home-category">
+            <label id="home-category-label" for="home-category-trigger">Category</label>
+            <div class="home-category-wrap">
+              <button
+                type="button"
+                class="home-category-trigger"
+                id="home-category-trigger"
+                aria-haspopup="listbox"
+                aria-expanded="false"
+                aria-controls="home-category-dropdown"
+                aria-labelledby="home-category-label"
+              >
+                <span class="home-category-trigger__text">All categories</span>
+                <span class="home-category-trigger__chev" aria-hidden="true"></span>
+              </button>
+              <input type="hidden" name="cat" id="home-category-value" value="">
+              <div
+                class="home-search-dropdown"
+                id="home-category-dropdown"
+                role="listbox"
+                aria-label="Filter by category"
+                hidden
+              >
+                <button type="button" class="home-search-dropdown__item" role="option" data-value="" aria-selected="true">
+                  <span class="home-search-dropdown__title">All categories</span>
+                </button>
+                <button type="button" class="home-search-dropdown__item" role="option" data-value="hardware-tools">
+                  <span class="home-search-dropdown__title">Hardware &amp; Tools</span>
+                </button>
+                <button type="button" class="home-search-dropdown__item" role="option" data-value="electrical">
+                  <span class="home-search-dropdown__title">Electrical</span>
+                </button>
+                <button type="button" class="home-search-dropdown__item" role="option" data-value="cleaning">
+                  <span class="home-search-dropdown__title">Cleaning</span>
+                </button>
+                <button type="button" class="home-search-dropdown__item" role="option" data-value="garbage-essentials">
+                  <span class="home-search-dropdown__title">Garbage &amp; bags</span>
+                </button>
+                <button type="button" class="home-search-dropdown__item" role="option" data-value="building-essentials">
+                  <span class="home-search-dropdown__title">Building essentials</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="button button-dark">See Products</button>
+        </form>
+        <div class="trust-row">
+          <div class="trust-item">
+            <span class="trust-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span class="trust-item__label">5 Boroughs</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 18H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="7" cy="18" r="2" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="17" cy="18" r="2" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </span>
+            <span class="trust-item__label">Same-Day Delivery</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span class="trust-item__label">NYC Based &amp; Operated</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4 7v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 22V12h4v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span class="trust-item__label">No Big-Box Runaround</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <section class="section-dark" id="products">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">What We Carry</span>
+        <h2 class="serif">Everything your building needs to run.</h2>
+        <p>
+          From everyday maintenance supplies to urgent building essentials, we keep Manhattan properties stocked and moving.
+        </p>
+      </div>
+
+      <div class="services-layout">
+        <div class="cards-column">
+          <article class="info-card">
+            <h3>Hardware &amp; Tools</h3>
+            <p>Core tools and hardware that keep every building job moving.</p>
+            <ul>
+              <li>Screws, nails &amp; anchors</li>
+              <li>Hand &amp; power tools</li>
+              <li>Locks &amp; door hardware</li>
+              <li>Pliers, wrenches &amp; more</li>
+            </ul>
+          </article>
+          <article class="info-card">
+            <h3>Electrical Supplies</h3>
+            <p>Essential electrical stock for repairs, replacements, and daily upkeep.</p>
+            <ul>
+              <li>Outlets, switches &amp; covers</li>
+              <li>Light bulbs &amp; fixtures</li>
+              <li>Wire, cable &amp; conduit</li>
+              <li>Breakers &amp; panels</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="cards-column">
+          <div class="spotlight">
+            <div class="spotlight-glow"></div>
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80" alt="NYC building supply delivery">
+          </div>
+          <article class="info-card">
+            <h3>Building Essentials</h3>
+            <p>The day-to-day items every residential building goes through.</p>
+            <ul>
+              <li>Caulk, sealants &amp; tape</li>
+              <li>Paint &amp; patching supplies</li>
+              <li>Plumbing fittings</li>
+              <li>Safety &amp; signage</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="cards-column">
+          <article class="info-card">
+            <h3>Cleaning Supplies</h3>
+            <p>Commercial cleaning products for common areas and maintenance rooms.</p>
+            <ul>
+              <li>Floor cleaners &amp; mops</li>
+              <li>Disinfectants &amp; sprays</li>
+              <li>Paper towels &amp; dispensers</li>
+              <li>Gloves &amp; PPE</li>
+            </ul>
+          </article>
+          <article class="info-card">
+            <h3>Garbage Bags &amp; Building Essentials</h3>
+            <p>Daily-use bags and essentials residential buildings go through fast.</p>
+            <ul>
+              <li>Heavy-duty contractor bags</li>
+              <li>Kitchen, desk, recycling, and compost liners</li>
+              <li>Caulk, tape, patching supplies</li>
+              <li>Plumbing fittings, safety, and signage</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+
+      <div class="all-products-cta" style="text-align: center; margin-top: 48px;">
+        <a href="products.html" class="button button-primary">All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee">
+    <div class="marquee-track">
+      <span class="marquee-item">Hardware &amp; Tools</span>
+      <span class="marquee-item">Electrical Supplies</span>
+      <span class="marquee-item">Cleaning Products</span>
+      <span class="marquee-item">Garbage Bags</span>
+      <span class="marquee-item">Building Essentials</span>
+      <span class="marquee-item">Same-Day Delivery</span>
+      <span class="marquee-item">All 5 Boroughs</span>
+      <span class="marquee-item">Manhattan Based</span>
+      <span class="marquee-item">Hardware &amp; Tools</span>
+      <span class="marquee-item">Electrical Supplies</span>
+      <span class="marquee-item">Cleaning Products</span>
+      <span class="marquee-item">Garbage Bags</span>
+      <span class="marquee-item">Building Essentials</span>
+      <span class="marquee-item">Same-Day Delivery</span>
+      <span class="marquee-item">All 5 Boroughs</span>
+      <span class="marquee-item">Manhattan Based</span>
+    </div>
+  </div>
+
+  <section class="section-light" id="delivery">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Delivery</span>
+        <h2 class="serif">We go where your buildings are.</h2>
+        <p>
+          Call us and we'll deliver to your address, same day for most orders placed before noon. No minimums for local Manhattan.
+        </p>
+      </div>
+
+      <div class="portfolio-grid">
+        <article class="portfolio-card">
+          <img src="https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1000&q=80" alt="Manhattan building exterior">
+          <div class="portfolio-copy">
+            <h3>Manhattan</h3>
+            <p>Home base. Fast local delivery with no minimums for most orders.</p>
+          </div>
+        </article>
+        <article class="portfolio-card">
+          <img src="https://images.unsplash.com/photo-1546436836-07a91091f160?auto=format&fit=crop&w=1000&q=80" alt="Brooklyn streetscape">
+          <div class="portfolio-copy">
+            <h3>Brooklyn</h3>
+            <p>Same-day service for common building supply runs and bulk drop-offs.</p>
+          </div>
+        </article>
+        <article class="portfolio-card">
+          <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=1000&q=80" alt="Queens neighborhood">
+          <div class="portfolio-copy">
+            <h3>Queens &amp; The Bronx</h3>
+            <p>Reliable borough coverage for supers, managers, and active job sites.</p>
+          </div>
+        </article>
+        <article class="portfolio-card">
+          <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1000&q=80" alt="Delivery truck in city">
+          <div class="portfolio-copy">
+            <h3>Staten Island</h3>
+            <p>Next-day delivery for larger requests and scheduled building supply drops.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="split-dark" id="about">
+    <div class="split-grid">
+      <div class="split-media" aria-hidden="true"></div>
+      <div class="split-copy">
+        <span class="eyebrow">About Us</span>
+        <h2 class="serif">Manhattan's building supply store.</h2>
+        <p>
+          "New York's buildings don't take days off, and neither do we." Brownstone Supply Co. was built for the people
+          who keep New York's residential buildings running. Supers, property managers, contractors, the ones who get
+          the call at 7am and need the part by 9.
+        </p>
+        <p>
+          Based in Manhattan. Serving all five boroughs. No big-box runaround, no waiting on shipments. Just what you
+          need, when you need it.
+        </p>
+        <div class="button-row">
+          <a class="button button-primary" href="#contact">Call Now</a>
+          <a class="button button-outline" href="#delivery">View Delivery</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="process">
+    <div class="container">
+      <div class="process-top">
+        <div>
+          <span class="eyebrow">How We Work</span>
+          <h2 class="serif">Simple, fast, and built around building emergencies.</h2>
+        </div>
+        <p>
+          No complicated apps required. Tell us what you need and we'll handle the rest, from quick source checks to direct building delivery.
+        </p>
+      </div>
+
+      <div class="process-timeline">
+        <div class="timeline-line" aria-hidden="true"></div>
+        <div class="timeline-dots" aria-hidden="true">
+          <span class="timeline-dot is-active"></span>
+          <span class="timeline-dot"></span>
+          <span class="timeline-dot"></span>
+          <span class="timeline-dot"></span>
+        </div>
+        <div class="steps-grid">
+          <article class="step">
+            <div class="step-number">01</div>
+            <h4>Call</h4>
+            <p>Tell us what you need, what building it is for, and how quickly you need it.</p>
+          </article>
+          <article class="step">
+            <div class="step-number">02</div>
+            <h4>Source &amp; Confirm</h4>
+            <p>We confirm stock immediately or source the item fast if it is not already on our shelves.</p>
+          </article>
+          <article class="step">
+            <div class="step-number">03</div>
+            <h4>Pack the Order</h4>
+            <p>Your supplies are prepared for the building, service entrance, or bulk drop-off location.</p>
+          </article>
+          <article class="step">
+            <div class="step-number">04</div>
+            <h4>Deliver Fast</h4>
+            <p>Most orders placed before noon can be delivered the same day across most boroughs.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="container">
+      <h3 class="serif">Our impact by the numbers</h3>
+      <div class="stats-grid">
+        <div class="stat">
+          <strong>5</strong>
+          <span>Boroughs Served</span>
+        </div>
+        <div class="stat">
+          <strong>Same Day</strong>
+          <span>Delivery Across Most Orders</span>
+        </div>
+        <div class="stat">
+          <strong>NYC</strong>
+          <span>Owned, Operated, and Focused</span>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <div class="testimonial-badge">NYC</div>
+        <div>
+          <p>
+            "A building waiting on supplies is a building with problems. Brownstone Supply Co. is built for the people
+            who need answers fast and parts even faster."
+          </p>
+          <strong>Built for supers, property managers, and contractors.</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark-values dark-values--variants">
+    <div class="container">
+      <div class="section-head values-variants-head">
+        <span class="eyebrow">Why Brownstone</span>
+        <h2 class="serif">Reliability, speed, and real building knowledge.</h2>
+        <p>The way we support supers, property managers, and contractors every day.</p>
+      </div>
+
+      <article class="values-option values-option--split">
+        <span class="values-option__label">Built For NYC Buildings</span>
+        <div class="values-option__split-grid">
+          <div class="values-option__media">
+            <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80" alt="Building manager reviewing supplies">
+            <div class="values-option__badge">Same-day support across NYC</div>
+          </div>
+          <div class="values-option__copy">
+            <h3 class="serif">Reliability, speed, and real building knowledge.</h3>
+            <div class="values-option__cards">
+              <article class="values-mini-card"><strong>Reliability</strong><p>If we say it is in stock, it is in stock.</p></article>
+              <article class="values-mini-card"><strong>Speed</strong><p>Same-day delivery options, no excuses.</p></article>
+              <article class="values-mini-card"><strong>Knowledge</strong><p>We know buildings. We speak your language.</p></article>
+              <article class="values-mini-card"><strong>Community</strong><p>NYC owned, NYC operated, NYC proud.</p></article>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <div class="container">
+      <div class="gallery-head">
+        <h2 class="serif">Built around New York buildings.</h2>
+      </div>
+      <div class="gallery-slider-window">
+        <div class="gallery-strip" id="home-gallery-strip">
+          <img src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=900&q=80" alt="New York building exterior">
+          <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=900&q=80" alt="City service entrance">
+          <img src="https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&w=900&q=80" alt="Tools and maintenance equipment">
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80" alt="Construction supplies">
+          <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=80" alt="Apartment building hallway">
+        </div>
+        <div class="gallery-mobile-controls" aria-label="Gallery controls">
+          <button type="button" class="gallery-mobile-btn" data-gallery-prev aria-label="Previous photo">‹</button>
+          <button type="button" class="gallery-mobile-btn" data-gallery-next aria-label="Next photo">›</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <span class="eyebrow">Get In Touch</span>
+      <h2 class="serif">Talk to us. We're real people.</h2>
+      <p class="lead">
+        Call us, message us, or send your building details below and we'll get back to you fast.
+      </p>
+
+      <div class="contact-layout">
+        <div class="contact-card">
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-label">Call Us</div>
+              <div class="contact-value">(212) 756-1225</div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-label">WhatsApp</div>
+              <div class="contact-value">Message Us</div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-label">Email</div>
+              <div class="contact-value">hello@brownstonesupplyco.com</div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-label">Location</div>
+              <div class="contact-value">Manhattan, New York City</div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-label">Hours</div>
+              <div class="contact-value">Mon-Fri 7:00am-6:00pm<br>Saturday 8:00am-4:00pm<br>Sunday Closed</div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="2531a6b6-869c-4323-9fa8-329e2bd5df82">
+          <input type="hidden" name="subject" value="New Contact — Brownstone Supply Co">
+          <input type="hidden" name="from_name" value="Brownstone Supply Co Website">
+          <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off">
+          <input type="text" name="website" style="position:absolute;left:-9999px;opacity:0;height:0;width:0;pointer-events:none;" tabindex="-1" autocomplete="off">
+          <div class="contact-form-grid">
+            <div class="field">
+              <label for="name">Your Name</label>
+              <input id="name" name="name" type="text" placeholder="John Smith" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="text" placeholder="(212) 000-0000" required>
+            </div>
+            <div class="field full">
+              <label for="address">Building Address</label>
+              <input id="address" name="address" type="text" placeholder="123 West 72nd St, Manhattan">
+            </div>
+            <div class="field full">
+              <label for="category">What Do You Need?</label>
+              <select id="category" name="category">
+                <option selected>Select a category...</option>
+                <option>Hardware &amp; Tools</option>
+                <option>Electrical Supplies</option>
+                <option>Cleaning Products</option>
+                <option>Garbage Bags</option>
+                <option>Building Essentials</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us what you need and we'll get back to you fast..." required></textarea>
+            </div>
+            <div class="field full captcha-field">
+              <label>Security check — <span class="captcha-question"></span></label>
+              <div class="captcha-row">
+                <input class="captcha-input" type="text" inputmode="numeric" pattern="[0-9\-]*" placeholder="Enter answer" autocomplete="off">
+                <button type="button" class="captcha-refresh" aria-label="New question" title="New question">New question</button>
+              </div>
+              <span class="captcha-hint" aria-live="polite"></span>
+            </div>
+            <div class="field full">
+              <button class="button button-primary" type="submit">Send Message</button>
+            </div>
+            <div class="field full contact-form-feedback" aria-live="polite"></div>
+          </div>
+        </form>
+      </div>
+
+      <footer class="site-footer">
+        <div>
+          <a class="brand" href="#home">
+            <img src="logo.svg" alt="Brownstone Supply Co" class="brand-logo">
+          </a>
+          <p>
+            Hardware, electrical, cleaning supplies, garbage bags, and building essentials delivered fast across Manhattan and the five boroughs.
+          </p>
+        </div>
+        <div>
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="#delivery">Delivery</a></li>
+            <li><a href="about-us/">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>We Carry</h4>
+          <ul>
+            <li>Hardware &amp; Tools</li>
+            <li>Electrical Supplies</li>
+            <li>Cleaning Products</li>
+            <li>Garbage Bags</li>
+            <li>Building Essentials</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>(212) 756-1225</li>
+            <li>hello@brownstonesupplyco.com</li>
+            <li>brownstonesupplyco.com</li>
+            <li>Manhattan, New York City</li>
+          </ul>
+        </div>
+      </footer>
+
+      <div class="footer-bottom">
+        <p>© 2026 Brownstone Supply Co. · Manhattan, NYC · All Rights Reserved</p>
+        <p>brownstonesupplyco.com</p>
+      </div>
+    </div>
+  </section>
+
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/38345689914"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat on WhatsApp"
+  >
+    <svg class="whatsapp-float__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path
+        fill="currentColor"
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+      />
+    </svg>
+  </a>
+
+  <a href="#home" class="back-to-top" aria-label="Back to top">
+    ↑
+  </a>
+
+  <script>
+    document.body.classList.add("js-ready");
+
+    const revealGroups = [
+      ".hero-copy",
+      ".floating-panel",
+      ".section-head",
+      ".info-card",
+      ".spotlight",
+      ".portfolio-card",
+      ".split-copy",
+      ".process-top",
+      ".process-panel",
+      ".step",
+      ".stat",
+      ".testimonial",
+      ".portrait",
+      ".values-copy",
+      ".value-item",
+      ".contact-card",
+      ".contact-form",
+      ".all-products-cta"
+    ];
+
+    const revealElements = revealGroups.flatMap((selector) =>
+      Array.from(document.querySelectorAll(selector))
+    );
+
+    const revealElement = (element) => {
+      element.classList.add("is-visible");
+    };
+
+    const revealIfInView = () => {
+      revealElements.forEach((element) => {
+        if (element.classList.contains("is-visible")) {
+          return;
+        }
+
+        const rect = element.getBoundingClientRect();
+        const inView =
+          rect.top < window.innerHeight * 0.82 &&
+          rect.bottom > window.innerHeight * 0.18;
+
+        if (inView) {
+          revealElement(element);
+        }
+      });
+    };
+
+    revealElements.forEach((element, index) => {
+      element.classList.add(`delay-${Math.min((index % 5) + 1, 5)}`);
+    });
+
+    const showImmediately = [".hero-copy", ".floating-panel"];
+
+    const revealHeroElements = () => {
+      showImmediately.forEach((selector) => {
+        document.querySelectorAll(selector).forEach((element) => revealElement(element));
+      });
+    };
+
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              revealElement(entry.target);
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.22,
+          rootMargin: "0px 0px 0px 0px"
+        }
+      );
+
+      revealElements.forEach((element) => {
+        if (!element.classList.contains("is-visible")) {
+          observer.observe(element);
+        }
+      });
+    } else {
+      revealElements.forEach((element) => revealElement(element));
+    }
+
+    window.addEventListener("load", () => {
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          revealHeroElements();
+          revealIfInView();
+        });
+      });
+    });
+    window.addEventListener("scroll", revealIfInView, { passive: true });
+    window.addEventListener("resize", revealIfInView);
+    setTimeout(revealHeroElements, 120);
+    setTimeout(revealIfInView, 180);
+
+    const stickyNav = document.querySelector(".sticky-nav");
+    const backToTop = document.querySelector(".back-to-top");
+    const toggleStickyNav = () => {
+      if (!stickyNav) {
+        return;
+      }
+
+      const shouldShow = window.scrollY > 110;
+      stickyNav.classList.toggle("is-visible", shouldShow);
+      stickyNav.setAttribute("aria-hidden", shouldShow ? "false" : "true");
+    };
+
+    const toggleBackToTop = () => {
+      if (!backToTop) {
+        return;
+      }
+
+      const shouldShow = window.scrollY > 420;
+      backToTop.classList.toggle("is-visible", shouldShow);
+    };
+
+    window.addEventListener("scroll", toggleStickyNav, { passive: true });
+    window.addEventListener("scroll", toggleBackToTop, { passive: true });
+    window.addEventListener("load", toggleStickyNav);
+    window.addEventListener("load", toggleBackToTop);
+    toggleStickyNav();
+    toggleBackToTop();
+
+    const mobileMenu = document.getElementById("mobile-menu");
+    const mobileToggles = Array.from(document.querySelectorAll("[data-mobile-menu-toggle]"));
+    const mobileClose = Array.from(document.querySelectorAll("[data-mobile-menu-close], .mobile-menu__link"));
+    const setMobileExpanded = (expanded) => {
+      mobileToggles.forEach((btn) => btn.setAttribute("aria-expanded", expanded ? "true" : "false"));
+    };
+    const openMobileMenu = () => {
+      if (!mobileMenu) return;
+      mobileMenu.hidden = false;
+      requestAnimationFrame(() => mobileMenu.classList.add("is-open"));
+      document.body.classList.add("mobile-menu-open");
+      setMobileExpanded(true);
+    };
+    const closeMobileMenu = () => {
+      if (!mobileMenu) return;
+      mobileMenu.classList.remove("is-open");
+      document.body.classList.remove("mobile-menu-open");
+      setMobileExpanded(false);
+      setTimeout(() => {
+        if (!mobileMenu.classList.contains("is-open")) mobileMenu.hidden = true;
+      }, 280);
+    };
+    mobileToggles.forEach((btn) => btn.addEventListener("click", openMobileMenu));
+    mobileClose.forEach((el) => el.addEventListener("click", closeMobileMenu));
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeMobileMenu();
+    });
+
+    const glow = document.querySelector(".spotlight-glow");
+    if (glow) {
+      glow.classList.add("hero-glow");
+    }
+
+    document.getElementById("home-catalog-form")?.addEventListener("submit", () => {
+      const q = document.getElementById("home-product-search")?.value?.trim() || "";
+      const cat = document.getElementById("home-category-value")?.value?.trim() || "";
+      try {
+        sessionStorage.setItem("bsc_products_q", q);
+        sessionStorage.setItem("bsc_products_cat", cat);
+      } catch (err) {
+        /* ignore private mode */
+      }
+    });
+
+    (function homeCatalogDropdowns() {
+      const searchInput = document.getElementById("home-product-search");
+      const searchDropdown = document.getElementById("home-search-dropdown");
+      const catTrigger = document.getElementById("home-category-trigger");
+      const catDropdown = document.getElementById("home-category-dropdown");
+      const catHidden = document.getElementById("home-category-value");
+      const catLabelEl = document.querySelector(".home-category-trigger__text");
+
+      function closeCategory() {
+        if (!catDropdown || !catTrigger) {
+          return;
+        }
+        catDropdown.hidden = true;
+        catTrigger.setAttribute("aria-expanded", "false");
+      }
+
+      function closeSearch() {
+        if (!searchDropdown || !searchInput) {
+          return;
+        }
+        searchDropdown.hidden = true;
+        searchInput.setAttribute("aria-expanded", "false");
+      }
+
+      const products = [
+        { title: "Screws, nails & anchors", href: "product/screws-nails-anchors.html", cat: "Hardware & Tools" },
+        { title: "Hand & power tools", href: "product/hand-power-tools.html", cat: "Hardware & Tools" },
+        { title: "Locks & door hardware", href: "product/locks-door-hardware.html", cat: "Hardware & Tools" },
+        { title: "Pliers, wrenches & more", href: "product/pliers-wrenches-more.html", cat: "Hardware & Tools" },
+        { title: "Outlets, switches & covers", href: "product/outlets-switches-covers.html", cat: "Electrical" },
+        { title: "Light bulbs & fixtures", href: "product/light-bulbs-fixtures.html", cat: "Electrical" },
+        { title: "Wire, cable & conduit", href: "product/wire-cable-conduit.html", cat: "Electrical" },
+        { title: "Breakers & panels", href: "product/breakers-panels.html", cat: "Electrical" },
+        { title: "Floor cleaners & mops", href: "product/floor-cleaners-mops.html", cat: "Cleaning" },
+        { title: "Disinfectants & sprays", href: "product/disinfectants-sprays.html", cat: "Cleaning" },
+        { title: "Paper towels & dispensers", href: "product/paper-towels-dispensers.html", cat: "Cleaning" },
+        { title: "Gloves & PPE", href: "product/gloves-ppe.html", cat: "Cleaning" },
+        { title: "Heavy-duty contractor bags", href: "product/heavy-duty-contractor-bags.html", cat: "Garbage & bags" },
+        { title: "Kitchen, desk, recycling, and compost liners", href: "product/kitchen-desk-recycling-compost-liners.html", cat: "Garbage & bags" },
+        { title: "Caulk, tape, patching supplies", href: "product/caulk-tape-patching-supplies.html", cat: "Garbage & bags" },
+        { title: "Plumbing fittings, safety, and signage", href: "product/plumbing-fittings-safety-signage.html", cat: "Garbage & bags" },
+        { title: "Caulk, sealants & tape", href: "product/caulk-sealants-tape.html", cat: "Building essentials" },
+        { title: "Paint & patching supplies", href: "product/paint-patching-supplies.html", cat: "Building essentials" },
+        { title: "Plumbing fittings", href: "product/plumbing-fittings.html", cat: "Building essentials" },
+        { title: "Safety & signage", href: "product/safety-signage.html", cat: "Building essentials" }
+      ];
+
+      function norm(s) {
+        return String(s || "")
+          .toLowerCase()
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "");
+      }
+
+      function escapeHtml(str) {
+        return String(str)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;");
+      }
+
+      function filterProducts(q) {
+        const nq = norm(q).trim();
+        if (!nq) {
+          return [];
+        }
+        return products.filter((p) => norm(p.title).includes(nq));
+      }
+
+      function renderSearch() {
+        if (!searchInput || !searchDropdown) {
+          return;
+        }
+        const q = searchInput.value;
+        const query = q.trim();
+        if (query.length === 0) {
+          searchDropdown.innerHTML = "";
+          searchDropdown.hidden = true;
+          searchInput.setAttribute("aria-expanded", "false");
+          return;
+        }
+
+        closeCategory();
+
+        const matches = filterProducts(q);
+        if (matches.length === 0) {
+          searchDropdown.innerHTML =
+            '<p class="home-search-dropdown__empty" role="presentation">No matching products</p>';
+          searchDropdown.hidden = false;
+          searchInput.setAttribute("aria-expanded", "true");
+          return;
+        }
+
+        searchDropdown.innerHTML = matches
+          .map(
+            (p) =>
+              `<a class="home-search-dropdown__item" role="option" href="${escapeHtml(p.href)}"><span class="home-search-dropdown__title">${escapeHtml(p.title)}</span><span class="home-search-dropdown__cat">${escapeHtml(p.cat)}</span></a>`
+          )
+          .join("");
+        searchDropdown.hidden = false;
+        searchInput.setAttribute("aria-expanded", "true");
+      }
+
+      if (searchInput && searchDropdown) {
+        searchInput.addEventListener("input", renderSearch);
+        searchInput.addEventListener("focus", () => {
+          if (searchInput.value.trim().length > 0) {
+            renderSearch();
+          }
+        });
+      }
+
+      if (catTrigger && catDropdown && catHidden && catLabelEl) {
+        catTrigger.addEventListener("click", (e) => {
+          e.stopPropagation();
+          const willOpen = catDropdown.hidden;
+          if (willOpen) {
+            closeSearch();
+            catDropdown.hidden = false;
+            catTrigger.setAttribute("aria-expanded", "true");
+          } else {
+            closeCategory();
+          }
+        });
+
+        catDropdown.addEventListener("click", (e) => {
+          const opt = e.target.closest("button.home-search-dropdown__item");
+          if (!opt || !catDropdown.contains(opt)) {
+            return;
+          }
+          const val = opt.getAttribute("data-value") || "";
+          const title = opt.querySelector(".home-search-dropdown__title");
+          catHidden.value = val;
+          catLabelEl.textContent = title ? title.textContent.trim() : "";
+          catDropdown.querySelectorAll('[role="option"]').forEach((el) => {
+            el.setAttribute("aria-selected", el === opt ? "true" : "false");
+          });
+          closeCategory();
+        });
+      }
+
+      document.addEventListener("click", (e) => {
+        const sw = searchInput?.closest(".home-search-wrap");
+        if (sw && !sw.contains(e.target)) {
+          closeSearch();
+        }
+        const cw = catTrigger?.closest(".home-category-wrap");
+        if (cw && !cw.contains(e.target)) {
+          closeCategory();
+        }
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          closeSearch();
+          closeCategory();
+        }
+      });
+    })();
+
+    (function homeGallerySlider() {
+      const strip = document.getElementById("home-gallery-strip");
+      const prevBtn = document.querySelector("[data-gallery-prev]");
+      const nextBtn = document.querySelector("[data-gallery-next]");
+      if (!strip || !prevBtn || !nextBtn) {
+        return;
+      }
+
+      const slides = Array.from(strip.querySelectorAll("img"));
+      if (slides.length <= 1) {
+        prevBtn.hidden = true;
+        nextBtn.hidden = true;
+        return;
+      }
+
+      const mq = window.matchMedia("(max-width: 820px)");
+      let index = 0;
+      let timer = null;
+
+      const render = () => {
+        if (!mq.matches) {
+          strip.style.transform = "";
+          return;
+        }
+        strip.style.transform = `translateX(-${index * 100}%)`;
+      };
+
+      const next = () => {
+        index = (index + 1) % slides.length;
+        render();
+      };
+
+      const prev = () => {
+        index = (index - 1 + slides.length) % slides.length;
+        render();
+      };
+
+      const stopAuto = () => {
+        if (timer) {
+          clearInterval(timer);
+          timer = null;
+        }
+      };
+
+      const startAuto = () => {
+        stopAuto();
+        if (!mq.matches) {
+          return;
+        }
+        timer = setInterval(next, 3200);
+      };
+
+      const onPrev = () => {
+        prev();
+        startAuto();
+      };
+
+      const onNext = () => {
+        next();
+        startAuto();
+      };
+
+      prevBtn.addEventListener("click", onPrev);
+      nextBtn.addEventListener("click", onNext);
+
+      let touchStartX = null;
+      let touchStartY = null;
+      const swipeThreshold = 42;
+
+      strip.addEventListener("touchstart", (e) => {
+        if (!mq.matches || e.touches.length !== 1) {
+          return;
+        }
+        touchStartX = e.touches[0].clientX;
+        touchStartY = e.touches[0].clientY;
+      }, { passive: true });
+
+      strip.addEventListener("touchend", (e) => {
+        if (!mq.matches || touchStartX === null || touchStartY === null || e.changedTouches.length !== 1) {
+          return;
+        }
+        const dx = e.changedTouches[0].clientX - touchStartX;
+        const dy = e.changedTouches[0].clientY - touchStartY;
+        touchStartX = null;
+        touchStartY = null;
+
+        if (Math.abs(dx) < swipeThreshold || Math.abs(dx) <= Math.abs(dy)) {
+          return;
+        }
+        if (dx < 0) {
+          onNext();
+        } else {
+          onPrev();
+        }
+      }, { passive: true });
+
+      const syncMode = () => {
+        if (!mq.matches) {
+          stopAuto();
+          strip.style.transform = "";
+          return;
+        }
+        index = 0;
+        render();
+        startAuto();
+      };
+
+      if (typeof mq.addEventListener === "function") {
+        mq.addEventListener("change", syncMode);
+      } else {
+        mq.addListener(syncMode);
+      }
+
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) {
+          stopAuto();
+        } else {
+          startAuto();
+        }
+      });
+
+      syncMode();
+    })();
+
+    (function () {
+      const form = document.querySelector(".contact-form");
+      if (!form) return;
+
+      let captchaAnswer;
+      const formOpenedAt = Date.now();
+
+      function generateCaptcha() {
+        const ops = ["+", "-", "×"];
+        const op = ops[Math.floor(Math.random() * ops.length)];
+        let a, b, answer;
+        if (op === "+") {
+          a = Math.floor(Math.random() * 10) + 1;
+          b = Math.floor(Math.random() * 10) + 1;
+          answer = a + b;
+        } else if (op === "-") {
+          a = Math.floor(Math.random() * 9) + 10;
+          b = Math.floor(Math.random() * 8) + 1;
+          answer = a - b;
+        } else {
+          a = Math.floor(Math.random() * 4) + 2;
+          b = Math.floor(Math.random() * 4) + 2;
+          answer = a * b;
+        }
+        captchaAnswer = answer;
+        const q = form.querySelector(".captcha-question");
+        const inp = form.querySelector(".captcha-input");
+        const hint = form.querySelector(".captcha-hint");
+        if (q) q.textContent = "What is " + a + " " + op + " " + b + "?";
+        if (inp) { inp.value = ""; inp.classList.remove("is-wrong"); }
+        if (hint) hint.textContent = "";
+      }
+
+      generateCaptcha();
+      const refreshBtn = form.querySelector(".captcha-refresh");
+      if (refreshBtn) refreshBtn.addEventListener("click", generateCaptcha);
+
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        const honeypot = form.querySelector('[name="website"]');
+        if (honeypot && honeypot.value.trim() !== "") return;
+
+        const captchaInput = form.querySelector(".captcha-input");
+        const hint = form.querySelector(".captcha-hint");
+        const userAnswer = parseInt(captchaInput.value.trim(), 10);
+
+        if (isNaN(userAnswer) || userAnswer !== captchaAnswer) {
+          captchaInput.classList.add("is-wrong");
+          captchaInput.value = "";
+          if (hint) hint.textContent = "Wrong answer — new question generated.";
+          generateCaptcha();
+          captchaInput.focus();
+          return;
+        }
+
+        if (Date.now() - formOpenedAt < 3000) return;
+
+        const btn = form.querySelector('button[type="submit"]');
+        const feedback = form.querySelector(".contact-form-feedback");
+        btn.disabled = true;
+        feedback.className = "field full contact-form-feedback";
+        feedback.textContent = "";
+
+        try {
+          const res = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: new FormData(form),
+          });
+          const json = await res.json();
+          if (json.success) {
+            form.insertAdjacentHTML("afterend", [
+              '<div class="contact-success">',
+              '  <div class="contact-success__icon">&#10003;</div>',
+              '  <h3 class="contact-success__title">Message Sent!</h3>',
+              '  <p class="contact-success__body">Thank you — we\'ll be in touch shortly.</p>',
+              '</div>'
+            ].join(""));
+            form.remove();
+          } else {
+            feedback.textContent = "Something went wrong. Please try again.";
+            feedback.classList.add("is-error");
+            btn.disabled = false;
+            generateCaptcha();
+          }
+        } catch {
+          feedback.textContent = "Network error. Please try again.";
+          feedback.classList.add("is-error");
+          btn.disabled = false;
+          generateCaptcha();
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
