@@ -97,7 +97,7 @@
             <br>
             buildings that
             <br>
-            <span>built New York.</span>
+            <span class="accent-text">built New York.</span>
           </h1>
           <p>
             Hardware, electrical, cleaning supplies, and everything in between, delivered fast to all 5 boroughs.
@@ -112,9 +112,9 @@
     </div>
   </header>
 
-  <div class="floating-panel-wrap">
-    <div class="container">
-      <section class="floating-panel">
+  <section class="section-dark" id="products">
+    <div class="floating-panel">
+      <div class="container">
         <div class="panel-title">Same-Day Building Supply Delivery</div>
         <form class="contact-strip contact-strip--catalog" action="products.html" method="get" id="home-catalog-form">
           <div class="field field--home-search">
@@ -226,11 +226,8 @@
             <span class="trust-item__label">No Big-Box Runaround</span>
           </div>
         </div>
-      </section>
+      </div>
     </div>
-  </div>
-
-  <section class="section-dark" id="products">
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">What We Carry</span>
@@ -376,11 +373,15 @@
   </section>
 
   <section class="split-dark" id="about">
+    <video class="split-dark__video" autoplay muted loop>
+      <source src="uploads/video.mp4" type="video/mp4">
+    </video>
     <div class="split-grid">
-      <div class="split-media" aria-hidden="true"></div>
-      <div class="split-copy">
+      <div class="split-content">
         <span class="eyebrow">About Us</span>
         <h2 class="serif">Manhattan's building supply store.</h2>
+      </div>
+      <div class="split-info">
         <p>
           "New York's buildings don't take days off, and neither do we." Brownstone Supply Co. was built for the people
           who keep New York's residential buildings running. Supers, property managers, contractors, the ones who get
@@ -507,7 +508,7 @@
   <section class="gallery">
     <div class="container">
       <div class="gallery-head">
-        <h2 class="serif">Built around New York buildings.</h2>
+        <h2 class="serif accent-text">Built around New York buildings.</h2>
       </div>
       <div class="gallery-slider-window">
         <div class="gallery-strip" id="home-gallery-strip">
@@ -525,90 +526,29 @@
     </div>
   </section>
 
-  <section class="contact" id="contact">
+  <section class="contact-footer" id="contact">
     <div class="container">
-      <span class="eyebrow">Get In Touch</span>
-      <h2 class="serif">Talk to us. We're real people.</h2>
-      <p class="lead">
-        Call us, message us, or send your building details below and we'll get back to you fast.
-      </p>
-
-      <div class="contact-layout">
-        <div class="contact-card">
-          <div class="contact-items">
-            <div class="contact-item">
-              <div class="contact-label">Call Us</div>
-              <div class="contact-value">(212) 756-1225</div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-label">WhatsApp</div>
-              <div class="contact-value">Message Us</div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-label">Email</div>
-              <div class="contact-value">hello@brownstonesupplyco.com</div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-label">Location</div>
-              <div class="contact-value">Manhattan, New York City</div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-label">Hours</div>
-              <div class="contact-value">Mon-Fri 7:00am-6:00pm<br>Saturday 8:00am-4:00pm<br>Sunday Closed</div>
-            </div>
+      <div class="cta-grid">
+        <div class="cta-content">
+          <h2 class="serif">Ready to stock your building?</h2>
+          <p class="cta-lead">Call us for same-day delivery, stock checks, and delivery windows across NYC.</p>
+          <div class="cta-buttons">
+            <a href="tel:(212)756-1225" class="button button-primary">Call Now</a>
+            <a href="contact/" class="button button-outline">Send Message</a>
           </div>
         </div>
-
-        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-          <input type="hidden" name="access_key" value="2531a6b6-869c-4323-9fa8-329e2bd5df82">
-          <input type="hidden" name="subject" value="New Contact — Brownstone Supply Co">
-          <input type="hidden" name="from_name" value="Brownstone Supply Co Website">
-          <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off">
-          <input type="text" name="website" style="position:absolute;left:-9999px;opacity:0;height:0;width:0;pointer-events:none;" tabindex="-1" autocomplete="off">
-          <div class="contact-form-grid">
-            <div class="field">
-              <label for="name">Your Name</label>
-              <input id="name" name="name" type="text" placeholder="John Smith" required>
-            </div>
-            <div class="field">
-              <label for="phone">Phone</label>
-              <input id="phone" name="phone" type="text" placeholder="(212) 000-0000" required>
-            </div>
-            <div class="field full">
-              <label for="address">Building Address</label>
-              <input id="address" name="address" type="text" placeholder="123 West 72nd St, Manhattan">
-            </div>
-            <div class="field full">
-              <label for="category">What Do You Need?</label>
-              <select id="category" name="category">
-                <option selected>Select a category...</option>
-                <option>Hardware &amp; Tools</option>
-                <option>Electrical Supplies</option>
-                <option>Cleaning Products</option>
-                <option>Garbage Bags</option>
-                <option>Building Essentials</option>
-              </select>
-            </div>
-            <div class="field full">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Tell us what you need and we'll get back to you fast..." required></textarea>
-            </div>
-            <div class="field full captcha-field">
-              <label>Security check — <span class="captcha-question"></span></label>
-              <div class="captcha-row">
-                <input class="captcha-input" type="text" inputmode="numeric" pattern="[0-9\-]*" placeholder="Enter answer" autocomplete="off">
-                <button type="button" class="captcha-refresh" aria-label="New question" title="New question">New question</button>
-              </div>
-              <span class="captcha-hint" aria-live="polite"></span>
-            </div>
-            <div class="field full">
-              <button class="button button-primary" type="submit">Send Message</button>
-            </div>
-            <div class="field full contact-form-feedback" aria-live="polite"></div>
+        <div class="cta-info">
+          <p>(212) 756-1225</p>
+          <p>hello@brownstonesupplyco.com</p>
+          <p>Manhattan, NYC</p>
+          <div class="cta-socials">
+            <span>Follow us</span>
           </div>
-        </form>
+        </div>
       </div>
+    </div>
 
+    <div class="container">
       <footer class="site-footer">
         <div>
           <a class="brand" href="#home">
@@ -625,7 +565,7 @@
             <li><a href="products.html">Products</a></li>
             <li><a href="#delivery">Delivery</a></li>
             <li><a href="about-us/">About Us</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="contact/">Contact</a></li>
           </ul>
         </div>
         <div>

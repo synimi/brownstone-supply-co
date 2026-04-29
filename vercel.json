@@ -1,0 +1,22 @@
+{
+  "buildCommand": "",
+  "installCommand": "",
+  "framework": null,
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "destination": "/404.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/404.html",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        }
+      ]
+    }
+  ]
+}
