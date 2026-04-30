@@ -711,6 +711,36 @@ body.mobile-menu-open {
   width: 100%;
 }
 
+#home-product-search {
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  min-height: 44px;
+  padding: 12px 12px;
+  border: 1px solid rgba(17, 32, 51, 0.12);
+  background: #f7f8fb;
+  color: var(--text);
+  border-radius: 12px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+#home-product-search:hover {
+  border-color: rgba(17, 32, 51, 0.2);
+}
+
+#home-product-search:focus {
+  outline: none;
+  border-color: rgba(195, 146, 75, 0.45);
+}
+
+#home-product-search::placeholder {
+  color: rgba(17, 32, 51, 0.5);
+}
+
 .home-category-trigger {
   box-sizing: border-box;
   width: 100%;
